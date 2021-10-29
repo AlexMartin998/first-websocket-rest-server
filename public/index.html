@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Google Sign In</title>
+  </head>
+  <body class="container">
+    <div class="row mt-5">
+      <div class="col-sm-6">
+        <h1>Google Sign-in</h1>
+        <div
+          class="mt-5"
+          id="g_id_onload"
+          data-client_id="960448950637-ji8l0jp2ignc98cp8fil283tv2sc6f50.apps.googleusercontent.com"
+          data-auto_prompt="false"
+          data-callback="handleCredentialResponse"
+        ></div>
+        <div
+          class="g_id_signin"
+          data-type="standard"
+          data-size="large"
+          data-theme="outline"
+          data-text="sign_in_with"
+          data-shape="rectangular"
+          data-logo_alignment="left"
+        ></div>
+
+        <button class="google-logout mt-4 mb-5">Log out</button>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-sm-6">
+        <h2>Login</h2>
+        <form action="" class="d-grid login-form">
+          <input
+            type="text"
+            name="mail"
+            class="form-control mb-2"
+            placeholder="Mail"
+          />
+          <input
+            type="text"
+            name="password"
+            class="form-control mb-2"
+            placeholder="Password"
+          />
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/auth.js"></script>
+  </body>
+</html>
